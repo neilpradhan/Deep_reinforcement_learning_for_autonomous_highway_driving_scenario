@@ -1,4 +1,4 @@
-import Cars
+import Vehicles
 import numpy as np
 import math
 import cv2
@@ -144,23 +144,23 @@ class GameV1:
                 ### velocity and position randomized
                 if (i==3):
                     currentposition += 50 ## change the freq from 30 to 40                   
-                    # self.Game[i].append(Cars.Truck(currentposition, np.random.normal(1+(0.3*(self.lanes-i-1)), 0.3)))
-                    self.Game[i].append(Cars.Truck(currentposition, 1))
+                    # self.Game[i].append(Vehicles.Truck(currentposition, np.random.normal(1+(0.3*(self.lanes-i-1)), 0.3)))
+                    self.Game[i].append(Vehicles.Truck(currentposition, 1))
 
                     continue
                     # continue
                 
-                self.Game[i].append(Cars.Car(currentposition, 2 * (self.lanes-i)))
+                self.Game[i].append(Vehicles.Car(currentposition, 2 * (self.lanes-i)))
                 
                 
                 
-                # self.Game[i].append(Cars.Car(currentposition, np.random.normal(2+(1+0.3*(self.lanes-i-1)), 0.3)))
+                # self.Game[i].append(Vehicles.Car(currentposition, np.random.normal(2+(1+0.3*(self.lanes-i-1)), 0.3)))
 
                 # currentposition += random.randrange(8,20)## any number between 8 and 20
-                # self.Game[i].append(Cars.Car(currentposition,2))
+                # self.Game[i].append(Vehicles.Car(currentposition,2))
                 currentposition += 50 ##  change freq from 20 to 30
 
-        self.Game[self.lanes-1][0] = Cars.PlayerCar(0, self.Game[self.lanes-1][1].velocity)
+        self.Game[self.lanes-1][0] = Vehicles.PlayerCar(0, self.Game[self.lanes-1][1].velocity)
 
 
 
@@ -190,7 +190,7 @@ class GameV1:
             for j in range(len(self.Game[i])):
                 updatingcar = self.Game[i][j] ## every car object
 
-                if (isinstance(updatingcar, Cars.PlayerCar) == False):
+                if (isinstance(updatingcar, Vehicles.PlayerCar) == False):
                 #     ## if its other car
                 #     # if the next car to it is some car probably also the last car in that lane
                 #     ## which means updating car should not be the last car
@@ -293,7 +293,7 @@ class GameV1:
     def searchforPlayerCar(self):
         for i in range(len(self.Game)):
             for j in range(len(self.Game[i])):
-                if isinstance(self.Game[i][j], Cars.PlayerCar):
+                if isinstance(self.Game[i][j], Vehicles.PlayerCar):
                     self.playerlanes = i
                     self.playercarposition =j
                     break
@@ -629,7 +629,7 @@ class GameV1:
                         visible_game_objects[i].append(self.Game[i][j])
 
                     if (self.Game[i][j].GetPos() == playercar.GetPos()\
-                         and isinstance(self.Game[i][j],Cars.PlayerCar)) :
+                         and isinstance(self.Game[i][j],Vehicles.PlayerCar)) :
 
                         self.gameplayerindexvert = i ## index of player car in visibility game objects
 
@@ -656,7 +656,7 @@ class GameV1:
         for i in range(len(vgo)):
             for j in range(len(vgo[i])):
 
-                if isinstance(vgo[i][j],Cars.Truck):
+                if isinstance(vgo[i][j],Vehicles.Truck):
                         # print("truck",vgo[i][j].GetVel())
                         posn = (vgo[i][j].GetPos() - pcivgo.GetPos())* 10 + self.back * 10
                         # self.shadewhere_truck(posn,i,2.75)
@@ -664,13 +664,13 @@ class GameV1:
                         continue                        
 
 
-                if isinstance(vgo[i][j],Cars.PlayerCar):
+                if isinstance(vgo[i][j],Vehicles.PlayerCar):
                     posn =  self.back * 10
                     # print("player_car",self.gameplayerindexvert," ",vgo[i][j].GetVel()," ", vgo[i][j].GetPos())
                     self.shadewhere(posn,self.gameplayerindexvert,vgo[i][j].GetVel())
                     continue
 
-                if isinstance (vgo[i][j], Cars.Car):
+                if isinstance (vgo[i][j], Vehicles.Car):
                     ## check if left or right
                         posn = (vgo[i][j].GetPos() - pcivgo.GetPos())* 10 + self.back * 10
                         # print("other_cars",vgo[i][j].GetVel())
@@ -856,7 +856,7 @@ def print_array(arr):
 # ## proof that local variables point to the same element in function
 # arr = []
 # for i in range(13):
-#     arr.append(Cars.Car(0,2))
+#     arr.append(Vehicles.Car(0,2))
 
 # update = arr[0]
 # print(arr[0].GetPos())
