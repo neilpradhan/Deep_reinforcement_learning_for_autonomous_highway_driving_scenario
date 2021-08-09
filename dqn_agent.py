@@ -1,6 +1,6 @@
 
 import numpy as np
-import Environment
+import Highway_Scenario
 import tensorflow as tf
 from tensorflow.contrib.layers import flatten
 import random
@@ -53,7 +53,7 @@ INITIAL_EPSILON = 1
 display = False
 training = True
 
-game=Environment.GameV1()
+game=Highway_Scenario.GameV1()
 game.populateGameArray()
 
 
