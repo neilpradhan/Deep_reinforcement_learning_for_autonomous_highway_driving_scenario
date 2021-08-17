@@ -1,6 +1,28 @@
 # Deep_Reinforcement_Learning_for_Autonomous_Highway_Driving_Scenario
 This repository contains the code of my master thesis
 
+## Table of contents
+* [Abstract](#general-info)
+* [Technologies](#technologies)
+* [Description](#Description)
+
+## Abstract:
+We present an autonomous driving agent on a simulated highway driving scenario with vehicles such as cars and trucks moving with stochastically variable velocity profiles. The focus of the simulated environment is to test tactical decision making in highway driving scenarios. When an agent (vehicle) maintains an optimal range of velocity it is beneficial both in terms of energy efficiency and greener environment. In order to maintain an optimal range of velocity, in this thesis work I proposed two novel reward structures: (a) gaussian reward structure and (b) exponential rise and fall reward structure. I trained respectively two deep reinforcement learning agents to study their differences and evaluate their performance based on a set of parameters that are most relevant in highway driving scenarios. The algorithm implemented in this thesis work is double-dueling deep-Q-network with prioritized experience replay buffer. Experiments were performed by adding noise to the inputs, simulating Partially Observable Markov Decision Process in order to obtain reliability comparison between different reward structures. Velocity occupancy grid was found to be better than binary occupancy grid as input for the algorithm. Furthermore, methodology for generating fuel efficient policies has been discussed and demonstrated with an example. 
+
+To see the complete report: [Thesis report](http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-289444)
+	
+## Technologies
+Project is created with:
+* Python 3
+* Scipy
+* Pandas
+* Tensorflow
+* Open cv
+* Numpy
+* Matplotlib
+* Math
+	
+## Description
 
 
 episode_number, time_stamps_survived, reward, average_episodic reward, action frequency, maximum_velocity, average velocity, epsilon, running_success_rate
