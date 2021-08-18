@@ -28,3 +28,7 @@ Project is created with:
 episode_number, time_stamps_survived, reward, average_episodic reward, action frequency, maximum_velocity, average velocity, epsilon, running_success_rate
 
 
+Experiments.ipynb
+Inference_from_training.ipynb
+Thesis_Testing_plots.ipynb
+
