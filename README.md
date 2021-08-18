@@ -23,7 +23,11 @@ Project is created with:
 * Math
 	
 ## Description
+Raw data is collected from the simulator as the agent covers the highway of 50,000 units in dense traffic. The simular functions and limitations have been discussed in the thesis report(http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-289444)
 
+
+1. Training
+2. Testing
 
 episode_number, time_stamps_survived, reward, average_episodic reward, action frequency, maximum_velocity, average velocity, epsilon, running_success_rate
 
