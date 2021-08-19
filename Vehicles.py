@@ -1,4 +1,4 @@
-class Car:
+class Vehicles:
     def __init__(self, position, velocity):
         self.position = position
         self.velocity = velocity
@@ -29,7 +29,7 @@ class Car:
         self.velocity = inputvel
 
 
-class PlayerCar(Car):
+class PlayerCar(Vehicles):
     def __init__(self, position, velocity):
         ## getting all position and vel filled as above
         super().__init__(position, velocity)
@@ -48,7 +48,7 @@ class PlayerCar(Car):
         self.velchange = self.velocity - temp
 
 
-class Truck(Car):
+class Truck(Vehicles):
     def __init__(self, position, velocity):
         super().__init__(position, velocity)
         self.velchange = 0
