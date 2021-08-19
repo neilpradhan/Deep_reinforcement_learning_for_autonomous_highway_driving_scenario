@@ -30,6 +30,3 @@ Data Analytics is done on the raw data obtained from the simulator and exponenti
 
 
 
-Inference_from_training.ipynb
-Thesis_Testing_plots.ipynb
-
