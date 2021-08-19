@@ -1,5 +1,5 @@
 # Deep_Reinforcement_Learning_for_Autonomous_Highway_Driving_Scenario
-This repository contains the code of my master thesis
+
 
 ## Table of contents
 * [Abstract](#general-info)
