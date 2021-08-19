@@ -1,5 +1,5 @@
 # Deep_Reinforcement_Learning_for_Autonomous_Highway_Driving_Scenario
-![Simulator]()
+![Simulator](https://github.com/neilpradhan/Deep_reinforcement_learning_for_autonomous_highway_driving_scenario/blob/main/thesis_picture.png)
 
 
 ## Table of contents
