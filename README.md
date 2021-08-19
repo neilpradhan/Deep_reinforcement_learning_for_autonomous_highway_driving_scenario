@@ -24,7 +24,7 @@ Project is created with:
 * Math
 	
 ## Description
-Raw data is collected from the simulator as the agent covers the highway of 50,000 units in dense traffic. The simular functions and limitations have been discussed in the [Thesis Report](http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-289444)
+Raw data is collected from the simulator as the agent covers the highway in dense traffic. The simular functions and limitations have been discussed in the [Thesis Report](http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-289444)
 
 
 Data Analytics is done on the raw data obtained from the simulator and exponential weighted moving average is performed and differences between the training performance of two reward structures are shown , and results of which are in the [Inference_from_training_two_rewards.ipynb](https://github.com/neilpradhan/Deep_reinforcement_learning_for_autonomous_highway_driving_scenario/blob/main/inference_from_training_two_rewards.ipynb) file and the results of key parameters plotted for the two reward structures for increasing amount of bias and variance are shown in the [Thesis_Testing_plots.ipynb](https://github.com/neilpradhan/Deep_reinforcement_learning_for_autonomous_highway_driving_scenario/blob/main/Thesis_Testing_Plots.ipynb) file
